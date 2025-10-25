@@ -20,6 +20,13 @@
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox hidden" aria-hidden="true">
+  <button class="lb-btn lb-prev" aria-label="Previous image">‹</button>
+  <img id="lightbox-img" alt="" />
+  <button class="lb-btn lb-next" aria-label="Next image">›</button>
+  <button class="lb-btn lb-close" aria-label="Close">×</button>
+</div>
 <body>
   <!-- HEADER / HERO -->
   <header class="hero">
@@ -129,9 +136,6 @@
 
     <div class="grid-gallery">
       <div class="shot">
-        <img src="assets/img/install.png" alt="Technician installing holiday lights on a home" loading="lazy" />
-      </div>
-      <div class="shot">
         <img src="assets/img/warm-white-house.png" alt="Warm white lights outlining a modern home" loading="lazy" />
       </div>
       <div class="shot">
@@ -149,14 +153,47 @@
       <div class="shot">
         <img src="assets/img/winter-house.png" alt="Winter home lit with warm white lights" loading="lazy" />
       </div>
-      <div class="shot">
-        <img src="assets/img/closeup-install.png" alt="Close-up of installer working on roofline lights" loading="lazy" />
-      </div>
-    </div>
+     </div>
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2 class="h2">Who’s Behind the Lights</h2>
+      <p class="body">
+        We’re Valley Boys Christmas Lights — two Montana locals who love clean lines, warm glows,
+        and safe installs. From cabins to storefronts, we handle design, installation, maintenance,
+        takedown, and optional storage so you can just enjoy the season.
+      </p>
+      <p class="body muted">
+        Licensed, insured, and ladder-happy. Text us a photo or address and we’ll send a free
+        mockup and quote.
+      </p>
 
+      <ul class="list">
+        <li>Pro-grade clips & weather-safe routing</li>
+        <li>Fast in-season maintenance (free)</li>
+        <li>Takedown & neatly labeled storage</li>
+      </ul>
+
+      <div class="cta-row" style="margin-top:14px;">
+        <a class="btn btn-red" href="tel:+14062726298">Call 406-272-6298</a>
+        <a class="btn btn-green" href="sms:+14062726298?&body=Hi! I'd like a free mockup and quote.">Text for Mockup</a>
+      </div>
+    </div>
+
+    <aside class="about-media">
+      <div class="about-frame">
+        <!-- Use your favorite portrait: either install1.png or closeup-install.png -->
+        <img src="assets/img/closeup-install.png"
+             alt="Installing warm white roofline lights"
+             width="420" height="560" loading="lazy" />
+      </div>
+    </aside>
+  </div>
+</section>
 
   <!-- QUOTE FORM -->
   <section id="quote" class="section">
